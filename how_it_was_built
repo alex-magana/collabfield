@@ -80,14 +80,18 @@ Start the application
 Generate the Pages controller
     rails g controller pages
     - PagesController is used to manage static and special pages.
-    [commit goes here]
+    https://github.com/alex-magana/collabfield/pull/1/commits/96fe1ff5feb7d004701e4e08c9a9889220cb88fe
+    https://github.com/alex-magana/collabfield/pull/1/files
 
 Define the index method in the PagesController
-    [commit goes here]
+    https://github.com/alex-magana/collabfield/pull/1/commits/2af6bf8e5b15d6299b39ca07d3ca95920e6de668
+    https://github.com/alex-magana/collabfield/pull/1/files
 
 Add the default route
-    [commit goes here]
+    https://github.com/alex-magana/collabfield/pull/1/commits/ad5b1918fd4aa7bd9c7028c037b7b38d2bc80576
+    https://github.com/alex-magana/collabfield/pull/1/files
 
 Create an index for the root path
     touch app/views/pages/index.html.erb
-    [commit goes here]
+    https://github.com/alex-magana/collabfield/pull/1/commits/df398ca1c0b34948359a6d8093581207393707b6
+    https://github.com/alex-magana/collabfield/pull/1/files
