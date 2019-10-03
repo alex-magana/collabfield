@@ -77,3 +77,17 @@ Initialize the repository
 Start the application
     rails s
 
+Generate the Pages controller
+    rails g controller pages
+    - PagesController is used to manage static and special pages.
+    [commit goes here]
+
+Define the index method in the PagesController
+    [commit goes here]
+
+Add the default route
+    [commit goes here]
+
+Create an index for the root path
+    touch app/views/pages/index.html.erb
+    [commit goes here]
