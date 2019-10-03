@@ -87,3 +87,7 @@ Define the index method in the PagesController
 
 Add the default route
     [commit goes here]
+
+Create an index for the root path
+    touch app/views/pages/index.html.erb
+    [commit goes here]
