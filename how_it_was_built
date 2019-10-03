@@ -1,0 +1,79 @@
+Guide: https://www.digitalocean.com/community/tutorials/how-to-set-up-ruby-on-rails-with-postgres
+
+PART ONE
+Install postgres (https://www.robinwieruch.de/postgres-sql-macos-setup)
+    brew install postgresql
+Install pgAdmin
+    https://www.pgadmin.org/download/pgadmin-4-macos/
+Install gem, pg
+    gem install pg
+
+Start postgres service
+    pg_ctl -D /usr/local/var/postgres start
+Stop postgres service
+    pg_ctl -D /usr/local/var/postgres stop
+
+Create database
+    createdb mydatabasename
+
+Drop database
+    dropdb mydatabasename
+
+List databases
+    psql --list
+
+Connect to a database
+    psql --dbname=DBNAME
+
+Help
+    psql --help
+
+Create the application
+    rails news collabfield --database=postgresql
+    - rails uses SQlite3 by default, to use PostgreSQL, we pass the
+    `postgresql` to the `--database` option.
+
+Navigate to the application directory
+    cd collabfield
+
+Add the following to the development section of `config/database.yml`
+    username: collabfield_dev
+    password: collabfield_dev
+
+Add the following to the test section of `config/database.yml`
+    username: collabfield_test
+    password: collabfield_test
+
+Create the database user
+    createuser --interactive --pwprompt
+    Role name collabfield_dev
+    Role password collabfield_dev
+    Superuser? n
+    Create database? n
+    Create more new roles? n
+
+    createuser --interactive --pwprompt
+    Role name collabfield_test
+    Role password collabfield_test
+    Superuser? n
+    Create database? n
+    Create more new roles? n
+
+Initialize the database
+    rake db:setup
+
+Start the application
+    rails s
+
+Create a repository on GitHub
+
+Initialize the repository
+    git init
+    git add .
+    git commit -m "Add skeletal files"
+    git remote add origin git@github.com:alex-magana/collabfield.git
+    git push -u origin master
+
+Start the application
+    rails s
+
