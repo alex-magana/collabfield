@@ -81,3 +81,6 @@ Generate the Pages controller
     rails g controller pages
     - PagesController is used to manage static and special pages.
     [commit goes here]
+
+Define the index method in the PagesController
+    [commit goes here]
